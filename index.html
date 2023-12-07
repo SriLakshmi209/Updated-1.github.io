@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U.S. Polo Products</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 0.5em;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 1em;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 1em;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            padding: 1em;
+            margin: 1em;
+            display: inline-block;
+            width: 200px;
+            text-align: center;
+        }
+
+        .search-bar {
+            margin: 1em;
+        }
+
+        .filters {
+            display: flex;
+            justify-content: space-between;
+            margin: 1em;
+        }
+
+        /* Add more styles as needed */
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>U.S. Polo Products</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">Kids</a>
+        <label for="search" style="color: #fff;">Search:</label>
+        <input type="text" id="search" class="search-bar" placeholder="Search">
+        <button>Search</button>
+    </nav>
+
+    <section>
+        <div class="filters">
+            <select>
+                <option value="price">Sort by Price</option>
+                <option value="discount">Sort by Discount</option>
+            </select>
+            <input type="text" placeholder="Filter by Price">
+        </div>
+
+        <!-- Product listings will go here -->
+        <div class="product">
+            <img src="uspolo-shirt.jpg" alt="U.S. Polo Shirt">
+            <h2>U.S. Polo T-Shirt</h2>
+            <p>Description of the product.</p>
+            <p>Price: $29.99</p>
+            <p>Discount: 10%</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- More product listings... -->
+
+    </section>
+
+    <footer>
+        <p>&copy; 2023 U.S. Polo Inc. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
