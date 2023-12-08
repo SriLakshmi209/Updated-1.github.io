@@ -55,6 +55,13 @@
 
         /* Add more styles as needed */
 
+        /* Updated style for better contrast */
+        label {
+            color: #fff;
+            background-color: #444;
+            padding: 0.5em;
+        }
+
     </style>
 </head>
 <body>
@@ -68,7 +75,7 @@
         <a href="#">Men</a>
         <a href="#">Women</a>
         <a href="#">Kids</a>
-        <label for="search" style="color: #fff;">Search:</label>
+        <label for="search">Search:</label>
         <input type="text" id="search" class="search-bar" placeholder="Search">
         <button>Search</button>
     </nav>
@@ -79,7 +86,7 @@
                 <option value="price">Sort by Price</option>
                 <option value="discount">Sort by Discount</option>
             </select>
-            <label for="filterPrice" style="color: #fff;">Filter by Price:</label>
+            <label for="filterPrice">Filter by Price:</label>
             <input type="text" id="filterPrice" class="filter-input" placeholder="Filter by Price">
         </div>
 
