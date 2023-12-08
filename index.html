@@ -42,8 +42,7 @@
             text-align: center;
         }
 
-        .search-bar,
-        .filter-input {
+        .search-bar {
             margin: 1em;
         }
 
@@ -54,13 +53,6 @@
         }
 
         /* Add more styles as needed */
-
-        /* Updated style for better contrast */
-        label {
-            color: #fff;
-            background-color: #444;
-            padding: 0.5em;
-        }
 
     </style>
 </head>
@@ -75,19 +67,19 @@
         <a href="#">Men</a>
         <a href="#">Women</a>
         <a href="#">Kids</a>
-        <label for="search">Search:</label>
-        <input type="text" id="search" class="search-bar" placeholder="Search">
+        <input type="text" class="search-bar" placeholder="Search">
         <button>Search</button>
     </nav>
 
     <section>
         <div class="filters">
-            <select>
+            <!-- Added label for the select element -->
+            <label for="sortBy">Sort By:</label>
+            <select id="sortBy">
                 <option value="price">Sort by Price</option>
                 <option value="discount">Sort by Discount</option>
             </select>
-            <label for="filterPrice">Filter by Price:</label>
-            <input type="text" id="filterPrice" class="filter-input" placeholder="Filter by Price">
+            <input type="text" placeholder="Filter by Price">
         </div>
 
         <!-- Product listings will go here -->
